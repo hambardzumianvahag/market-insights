@@ -1,0 +1,14 @@
+.main{
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .main{
+    padding: 20px;
+    justify-content: center;
+    gap: 10px;
+  }
+}

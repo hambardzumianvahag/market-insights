@@ -1,0 +1,58 @@
+.mainDiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 397px;
+  height: 48px;
+  padding: 8px;
+  gap: 31px;
+  margin: 12px 0;
+  border-radius: 38px;
+}
+.mainDiv:hover{
+  background-color: #48484E;
+  cursor: pointer;
+}
+.mainDivInfo{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.nameDiv{
+  display: flex;
+  max-width: 219px;
+}
+.progressDiv{
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  background-color: rgba(85, 212, 167, 0.1);
+  border-radius: 20px;
+}
+.progressIcon{
+  font-size: 25px;
+  color: #23946B;
+}
+.progressText{
+  color: #23946B;
+  font-size: 10px;
+  font-weight: 500;
+}
+.avatar img{
+  border-radius: 50%;
+}
+.chatIcon{
+  padding: 6px 8px;
+  border-radius: 50%;
+  background-color: #2E2E32;
+}
+.nameTitle{
+  font-weight: 500;
+  font-size: 12px;
+  color: #FEFEFF;
+}
+.numberTitle{
+  font-weight: 500;
+  font-size: 12px;
+  color: #9B99AE;
+}

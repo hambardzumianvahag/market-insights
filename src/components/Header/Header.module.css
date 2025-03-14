@@ -1,0 +1,134 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 60px;
+}
+.headerMenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.headerMainNav ul, .headerRegisterNav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.logo{
+  cursor: pointer;
+}
+
+.headerMainNav ul li, .headerRegisterNav ul li{
+  text-decoration: none;
+  color: #363352;
+  font-weight: 500;
+  position: relative;
+}
+.headerMainNav ul li:hover{
+  color:#D12D34;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.headerMainNav ul li:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -24px; 
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #D12D34;
+}
+
+.headerMainNav ul{
+  padding: 24px 54.5px;
+  border: 1px solid #EBEBEB;
+  border-radius: 50px;
+}
+
+.headerRegisterNav ul{
+  padding: 16px 8px;
+  border: 1px solid #EBEBEB;
+  border-radius: 50px;
+  gap: 0;
+}
+
+.headerRegisterNav ul li{
+  padding: 8px 24px;
+  border-radius: 20px;
+}
+
+.headerRegisterNav ul li:hover{
+  cursor: pointer;
+  background-color: #FFEEEF;
+  color: #D12D34;
+  font-weight: 500;
+}
+
+/* ****************** */
+
+.burgerIcon{
+  display: none;
+}
+.burgerMenu{
+  position: absolute;
+  right: 0;
+  top: 70px;
+  width: 100vw;
+  height: 100vh;
+  padding: 16px 60px;
+  background-color: #FFFFFF;
+}
+
+
+/* media */
+
+@media screen and (max-width: 1356px){
+  .header{
+    gap: 20px;
+  }
+  .headerMenu{
+    display: none;
+  }
+  .burgerIcon{
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+.burgerMenuNav{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.burgerMenuNavRegister{
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .headerMainNav ul{
+    gap: 10px;
+    padding: 24px 27px;
+  }
+  .header div nav ul li{
+    font-size: 12px
+  }
+}
+
+@media screen and (max-width: 420px){
+  .headerMainNav ul{
+    flex-direction: column;
+  }
+}

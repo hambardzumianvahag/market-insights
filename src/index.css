@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'montserrat';
+  src: url('/src/assets/font/Montserrat-Italic-VariableFont_wght.ttf') format('truetype'),
+       url('/src/assets/font/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'montserrat'
+}

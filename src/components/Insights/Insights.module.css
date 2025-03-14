@@ -1,0 +1,77 @@
+.insights{
+  padding: 48px 60px 0 60px;
+}
+.insightsHeader{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: #151D48;
+}
+.insightsFilter{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid #F8F9FA;
+  box-shadow: 0px 4px 20px 0px #EEEEEE80;
+  padding: 24px;
+  border-radius: 28px;
+  margin-top: 20px;
+}
+.insightsSelect{
+  padding: 24px;
+}
+.selectTitle{
+  color: #151D48;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 600;
+}
+.selectBtnDiv{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 32px;
+}
+.selectBtn{
+   padding: 12px 36px;
+   font-weight: 500;
+   line-height: 150%;
+   color: #2E2C41;
+   border-radius: 34px; 
+   border: 1px solid transparent;
+}
+.selectBtn:hover{
+  border: 1px solid #D12D34;
+  background: #FEF2F3;
+  color: #D12D34;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* media */
+
+@media screen and (max-width: 768px) {
+  .insights{
+    padding: 20px;
+  }
+  .insightsHeader{
+    font-size: 14px;
+    text-align: center;
+  }
+  .insightsFilter{
+    padding: 0;
+  }
+  .selectTitle{
+    font-size: 12px;
+  }
+  .selectBtnDiv{
+    justify-content: center;
+  }
+  .selectBtn{
+    padding: 6px 18px;
+  }
+  .selectBtnDiv{
+    gap: 10px
+  }
+}

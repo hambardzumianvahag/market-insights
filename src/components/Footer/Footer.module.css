@@ -1,0 +1,29 @@
+.footer{
+  background-color: #39393D;
+  padding: 60px;
+}
+.footerLastPart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+.footerLogo{
+  cursor: pointer;
+}
+.footerLastPart p{
+  font-size: 14px;
+  color: #FEFEFF;
+}
+
+@media screen and (max-width: 768px) {
+  .footer{
+    padding: 20px;
+  }
+  .footerLogo{
+    width: 70%;
+  }
+  .footerLastPart p{
+    font-size: 10px;
+  }
+}

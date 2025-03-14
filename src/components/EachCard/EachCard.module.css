@@ -1,0 +1,64 @@
+.mainCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 20px 0px #EEEEEE80;
+  background-color: #FFFFFF;
+  border: 1px solid #F8F9FA;
+  padding: 24px 130px;
+  border-radius: 28px;
+}
+
+.cardTitle{
+  color: #363352;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.cardSubtitle{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #666478;
+  margin: 3px 0 17px 0;
+}
+.cardProgress{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  background-color: rgba(85, 212, 167, 0.1);
+  border-radius: 20px;
+  padding: 4.5px 8px;
+  color: #3CB288;
+  font-size: 14px;
+}
+.triangle{
+  color: #3CB288;
+  font-size: 25px;
+}
+.cardFooter{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footerText{
+  font-size: 14px;
+  font-weight: 500;
+  color: #363352;
+}
+@media screen and (max-width: 768px) {
+  .mainCard{
+    padding: 24px 60px;
+  }
+  .cardTitle{
+    font-size: 20px;
+  }
+  .cardSubtitle{
+    font-size: 14px;
+  }
+  .footerText{
+    font-size: 10px;
+  }
+}

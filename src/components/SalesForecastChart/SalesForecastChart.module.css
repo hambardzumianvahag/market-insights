@@ -1,0 +1,176 @@
+.row {
+  min-width: 300px;
+  max-width: 870px;
+  width: 100%;
+}
+
+.colLg7 {
+  max-width: 100%;
+}
+
+.cardStyle {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selectStyle {
+  display: inline-block;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.selectPosition {
+  display: flex;
+}
+
+.selectSm select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  color: #333;
+  font-size: 14px;
+}
+
+.chart {
+  position: relative;
+}
+
+.legend3 {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.legendItem {
+  display: flex;
+  margin-right: 15px;
+  align-items: center;
+}
+
+.bgColor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.primaryBg {
+  background-color: #365cf5;
+}
+
+.purpleBg {
+  background-color: #9b51e0;
+}
+
+.orangeBg {
+  background-color: #f2994a;
+}
+
+.textSuccess {
+  color: #28a745;
+}
+
+.textDanger {
+  color: #dc3545;
+}
+
+.textDark {
+  color: #333;
+}
+
+.textSm {
+  font-size: 14px;
+}
+
+.textMedium {
+  font-size: 18px;
+  font-weight: 600;
+  color: #151D48;
+}
+
+.radioDiv{
+  display: flex;
+  gap: 62px;
+  justify-content: center;
+  align-items: center;
+}
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ddd;
+  border: 2px solid #aaa;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="radio"]:checked + label::before {
+  background-color: #D12D34;
+  border-color: #D12D34;
+}
+
+input[type="radio"]:hover + label::before {
+  background-color: #D12D34;
+}
+.cycleTwo{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #D12D34;
+}
+.cycleOne{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #289991;
+}
+.yearDiv{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+  color: #151D48;
+}
+.firstYear, .secondYear{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .textMedium {
+    font-size: 14px;
+  }
+  .yearDiv{
+    font-size: 14px;
+  }
+}
