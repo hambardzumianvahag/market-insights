@@ -17,8 +17,8 @@ const BarChart = ({color, title, value1, value2}) => {
         borderColor: "transparent",
         borderRadius: 20,
         borderWidth: 5,
-        barThickness: 50,
-        maxBarThickness: 50,
+        barThickness: 30,
+        maxBarThickness: 30,
         data: [600, 700, 1000, 700, 650, 800],
       },
     ],
@@ -87,7 +87,7 @@ const BarChart = ({color, title, value1, value2}) => {
   };
 
   return (
-    <div style={{ width: "100%", maxWidth: '870px', minWidth: '320px', boxShadow: '0px 4px 20px 0px #EEEEEE80', padding: '24px 20px', border: '1px solid #F8F9FA', borderRadius: '24px', backgroundColor:'#FFFFFF', marginLeft: "-35px", marginTop: '20px'}}>
+    <div style={{ width: "100%", maxWidth: '870px', minWidth: '30px', boxShadow: '0px 4px 20px 0px #EEEEEE80', padding: '24px 20px', border: '1px solid #F8F9FA', borderRadius: '24px', backgroundColor:'#FFFFFF', marginTop: '20px'}}>
       <h3 className={styles.title}>{title}</h3>
       <Bar data={data} options={options} />
       <div className={styles.radioDiv}>
