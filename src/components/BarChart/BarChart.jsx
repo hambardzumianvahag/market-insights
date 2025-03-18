@@ -3,11 +3,9 @@ import { Bar } from "react-chartjs-2";
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from "chart.js";
 import styles from './BarChart.module.css';
 
-// Register Chart.js components
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const BarChart = ({color, title, value1, value2}) => {
-  // Data for the chart
   const data = {
     labels: ["Emaar", "Nakheel", "Al Makht.", "Al Makht.", "Emaar", "Nakheel"],
     datasets: [
@@ -24,7 +22,6 @@ const BarChart = ({color, title, value1, value2}) => {
     ],
   };
 
-  // Options for the chart
   const options = {
     plugins: {
       tooltip: {
@@ -87,7 +84,7 @@ const BarChart = ({color, title, value1, value2}) => {
   };
 
   return (
-    <div style={{ width: "100%", maxWidth: '870px', minWidth: '30px', boxShadow: '0px 4px 20px 0px #EEEEEE80', padding: '24px 20px', border: '1px solid #F8F9FA', borderRadius: '24px', backgroundColor:'#FFFFFF', marginTop: '20px'}}>
+    <div className={styles.container}>
       <h3 className={styles.title}>{title}</h3>
       <Bar data={data} options={options} />
       <div className={styles.radioDiv}>

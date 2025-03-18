@@ -1,3 +1,16 @@
+.container {
+  width: 100%;
+  max-width: 890px;
+  height: 617px;
+  min-width: 30px;
+  box-shadow: 0px 4px 20px 0px #EEEEEE80;
+  padding: 24px 20px;
+  border: 1px solid #F8F9FA;
+  border-radius: 24px;
+  background-color: #FFFFFF;
+  margin-top: -20px;
+}
+
 .title{
   color: #151D48;
   font-weight: 600;
@@ -33,7 +46,6 @@ input[type="radio"] + label::before {
   border-radius: 50%;
   background-color: #ddd;
   border: 2px solid #aaa;
-  transition: background-color 0.3s, border-color 0.3s;
 }
 
 input[type="radio"]:checked + label::before {
@@ -46,10 +58,20 @@ input[type="radio"]:hover + label::before {
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    height: 100%;
+  }
   .title{
     font-size: 14px;
   }
   input[type="radio"] + label{
     font-size: 12px;
+  }
+  .radioDiv{
+    gap: 20px;
+  }
+  input[type="radio"] + label::before{
+    width: 15px;
+    height: 15px;
   }
 }

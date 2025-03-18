@@ -36,9 +36,8 @@ const ChartByPercentage = ({ list }) => {
           type: 'pie donut',
           angle_orientation: 125,
           shape_padding: 0.3,
-          mouseTracking_enabled: false
+          mouseTracking_enabled: true
         },
-        zAxis_formatString: 'n1',
         series: [
           {
             points: list.map((item) => ({
@@ -63,7 +62,8 @@ const ChartByPercentage = ({ list }) => {
       <div className={styles.chartPercent}>
         <div
             ref={chartRef}
-            style={{ width: '295px', height: '450px', margin: '0 auto' }}
+            className={styles.container}
+            // style={{ width: '295px', height: '350px', margin: '0 auto' }}
         />
 
         <div className={styles.chartNoteContainer}>

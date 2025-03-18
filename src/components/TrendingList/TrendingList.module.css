@@ -1,7 +1,14 @@
 .trendingList{
+  max-width: 1440px;
+  margin: 0 auto;
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   column-gap: 24px;
+}
+@media screen and (max-width: 935px){
+  .trendingList{
+    justify-content: center;
+  }
 }

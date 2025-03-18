@@ -1,3 +1,7 @@
+.trending{
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .trendingTitle{
   max-width: 571px;
 }

@@ -44,7 +44,6 @@ const SalesForecastChart = () => {
         fill: false,
         tension: 0.4,
       },
-    
     ],
   };
 

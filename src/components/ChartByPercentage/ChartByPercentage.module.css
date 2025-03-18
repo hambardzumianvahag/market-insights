@@ -1,4 +1,8 @@
-/* ChartByPercentage.module.css */
+.container{
+  width: 295px;
+  height: 390px;
+  margin: 0 auto;
+}
 .chartPercent {
   margin-bottom: 40px;
   padding: 40px;
@@ -82,8 +86,11 @@
   max-width: 800px;
 }
 @media screen and (max-width: 768px) {
+  .container{
+    width: 265px;
+  }
   .chartPercent{
-    padding: 20px 0;
+    padding: 20px;
   }
   .chartName{
     font-size: 12px;
